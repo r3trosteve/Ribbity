@@ -19,14 +19,17 @@
 {
     [super viewDidLoad];
     
+    // initialise our recipients property
     self.recipients = [[NSMutableArray alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    // grab the list of friends
     self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
     
+    // first we generate the list of friends
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -39,20 +42,25 @@
         }
     }];
     
+    // if there's no image or video, then show the imagepicker
     if (self.image == nil && [self.videoFilePath length] == 0) {
         self.imagePicker = [[UIImagePickerController alloc] init];
         self.imagePicker.delegate = self;
         self.imagePicker.allowsEditing = NO;
         self.imagePicker.videoMaximumDuration = 10;
         
+        // check if deice supports camera, if not show library
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
         }
         else {
             self.imagePicker.sourceType  = UIImagePickerControllerSourceTypePhotoLibrary;
         }
+        
+        // determine appropriate media types
         self.imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:self.imagePicker.sourceType ];
         
+        // show the relevant imagepicker view type
         [self presentViewController:self.imagePicker animated:NO completion:nil ];
     }
     
@@ -70,7 +78,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
+    // number of rows in section is equal to the number of items in array
     return [self.friends count];
 }
 
@@ -82,6 +90,7 @@
     PFUser *user = [self.friends objectAtIndex:indexPath.row];
     cell.textLabel.text = user.username;
     
+    // set the checkmark if user is already selected as recipient
     if ([self.recipients containsObject:user.objectId]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
@@ -99,6 +108,7 @@
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     PFUser *user = [self.friends objectAtIndex:indexPath.row];
     
+    // toggle checkmark to add or remove recipients
     if(cell.accessoryType == UITableViewCellAccessoryNone) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         [self.recipients addObject:user.objectId];
@@ -114,6 +124,7 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:NO completion:nil];
     
+    // redirect back to inbox
     [self.tabBarController setSelectedIndex:0];
 }
 
@@ -221,6 +232,7 @@
     [self.recipients removeAllObjects];
 }
 
+// define the processing of the image
 - (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height {
     CGSize newSize = CGSizeMake(width, height);
     CGRect newRectangle = CGRectMake(0, 0, width, height);
