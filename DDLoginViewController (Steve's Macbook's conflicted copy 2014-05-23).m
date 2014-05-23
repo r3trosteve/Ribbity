@@ -21,6 +21,7 @@ UIGestureRecognizer *tapper;
 {
     [super viewDidLoad];
     
+    // Dismiss the keyboard when tapping outside the textField http://stackoverflow.com/questions/5306240/iphone-dismiss-keyboard-when-touching-outside-of-textfield
     tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     tapper.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapper];
@@ -56,4 +57,12 @@ UIGestureRecognizer *tapper;
     }
 
 }
+
+#pragma mark - Helper Methods
+
+- (void)handleSingleTap:(UITapGestureRecognizer *) sender
+{
+    [self.view endEditing:YES];
+}
+
 @end

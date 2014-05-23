@@ -15,12 +15,18 @@
 
 @implementation DDSignupViewController
 
+UIGestureRecognizer *tapper;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.hidesBackButton = YES;
+    
+    // Dismiss the keyboard when tapping outside the textField
+    tapper = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+    tapper.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tapper];
 }
 
 - (IBAction)signup:(id)sender {
@@ -49,4 +55,12 @@
         }];
     }
 }
+
+#pragma mark - Helper Methods
+
+- (void)handleSingleTap:(UITapGestureRecognizer *) sender
+{
+    [self.view endEditing:YES];
+}
+
 @end
