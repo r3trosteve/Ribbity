@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B310B7BD-94E3-41A2-B0A1-A670A7BC9717</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lumpy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>980F1002-8F91-4C66-A65D-7BC3BAE3EE12</key>
+		<string>https://github.com/r3trosteve/Ribbity.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lumpy.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>980F1002-8F91-4C66-A65D-7BC3BAE3EE12</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/r3trosteve/Ribbity.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>980F1002-8F91-4C66-A65D-7BC3BAE3EE12</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>980F1002-8F91-4C66-A65D-7BC3BAE3EE12</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ribbit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

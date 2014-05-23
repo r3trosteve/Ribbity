@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C85C865AD14ED1922830CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC38859B36A5411496E33CDF /* libPods.a */; };
 		0C244137192AA788004580BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C244136192AA788004580BF /* Foundation.framework */; };
 		0C244139192AA788004580BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C244138192AA788004580BF /* CoreGraphics.framework */; };
 		0C24413B192AA788004580BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24413A192AA788004580BF /* UIKit.framework */; };
@@ -20,12 +21,6 @@
 		0C24415A192AA789004580BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C244158192AA789004580BF /* InfoPlist.strings */; };
 		0C24415C192AA789004580BF /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24415B192AA789004580BF /* RibbitTests.m */; };
 		0C244166192AA7BC004580BF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C244165192AA7BC004580BF /* MainStoryboard.storyboard */; };
-		0C24416D192AAA58004580BF /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C244167192AAA58004580BF /* camera.png */; };
-		0C24416E192AAA58004580BF /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C244168192AAA58004580BF /* friends.png */; };
-		0C24416F192AAA58004580BF /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C244169192AAA58004580BF /* inbox.png */; };
-		0C244170192AAA58004580BF /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C24416A192AAA58004580BF /* camera@2x.png */; };
-		0C244171192AAA58004580BF /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C24416B192AAA58004580BF /* friends@2x.png */; };
-		0C244172192AAA58004580BF /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C24416C192AAA58004580BF /* inbox@2x.png */; };
 		0C244176192B43B9004580BF /* DDInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C244175192B43B9004580BF /* DDInboxViewController.m */; };
 		0C244179192B509D004580BF /* DDEditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C244178192B509D004580BF /* DDEditFriendsViewController.m */; };
 		0C24417B192B5508004580BF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24417A192B5508004580BF /* Parse.framework */; };
@@ -38,8 +33,14 @@
 		0C244189192B570F004580BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C244188192B570F004580BF /* Security.framework */; };
 		0C24418B192B5718004580BF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24418A192B5718004580BF /* StoreKit.framework */; };
 		0C24418D192B5727004580BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24418C192B5727004580BF /* SystemConfiguration.framework */; };
+		0C49A73F192DF74200B3D259 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C49A73E192DF74200B3D259 /* libz.1.2.5.dylib */; };
+		0C5C59BC192E2AFD007EC100 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C59BB192E2AFD007EC100 /* Podfile */; };
 		0C67FA09192B640200C8C6BB /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C67FA08192B640200C8C6BB /* DDLoginViewController.m */; };
 		0C67FA0C192B641F00C8C6BB /* DDSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C67FA0B192B641F00C8C6BB /* DDSignupViewController.m */; };
+		0C911923192E4366003644A0 /* DDImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C911922192E4366003644A0 /* DDImageViewController.m */; };
+		0C911925192E5341003644A0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C911924192E5341003644A0 /* MediaPlayer.framework */; };
+		0CE71AF0192C98D0004FF720 /* DDFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */; };
+		0CE71AF3192DEDB3004FF720 /* DDCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE71AF2192DEDB3004FF720 /* DDCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,29 +54,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C244133192AA788004580BF /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C244133192AA788004580BF /* Lumpy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lumpy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C244136192AA788004580BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0C244138192AA788004580BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0C24413A192AA788004580BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0C24413E192AA788004580BF /* Ribbit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ribbit-Info.plist"; sourceTree = "<group>"; };
+		0C24413E192AA788004580BF /* Lumpy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lumpy-Info.plist"; sourceTree = "<group>"; };
 		0C244140192AA788004580BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0C244142192AA788004580BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0C244144192AA788004580BF /* Ribbit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ribbit-Prefix.pch"; sourceTree = "<group>"; };
+		0C244144192AA788004580BF /* Lumpy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lumpy-Prefix.pch"; sourceTree = "<group>"; };
 		0C244145192AA788004580BF /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		0C244146192AA788004580BF /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
 		0C244148192AA788004580BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0C24414E192AA789004580BF /* RibbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C24414E192AA789004580BF /* LumpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C24414F192AA789004580BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0C244157192AA789004580BF /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
 		0C244159192AA789004580BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0C24415B192AA789004580BF /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
 		0C244165192AA7BC004580BF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0C244167192AAA58004580BF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		0C244168192AAA58004580BF /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
-		0C244169192AAA58004580BF /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
-		0C24416A192AAA58004580BF /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
-		0C24416B192AAA58004580BF /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
-		0C24416C192AAA58004580BF /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		0C244174192B43B9004580BF /* DDInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDInboxViewController.h; path = ../DDInboxViewController.h; sourceTree = "<group>"; };
 		0C244175192B43B9004580BF /* DDInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDInboxViewController.m; path = ../DDInboxViewController.m; sourceTree = "<group>"; };
 		0C244177192B509D004580BF /* DDEditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDEditFriendsViewController.h; path = ../DDEditFriendsViewController.h; sourceTree = "<group>"; };
@@ -90,10 +85,21 @@
 		0C244188192B570F004580BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0C24418A192B5718004580BF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0C24418C192B5727004580BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C49A73E192DF74200B3D259 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		0C5C59BB192E2AFD007EC100 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		0C67FA07192B640200C8C6BB /* DDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLoginViewController.h; path = ../DDLoginViewController.h; sourceTree = "<group>"; };
 		0C67FA08192B640200C8C6BB /* DDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLoginViewController.m; path = ../DDLoginViewController.m; sourceTree = "<group>"; };
 		0C67FA0A192B641F00C8C6BB /* DDSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDSignupViewController.h; path = ../DDSignupViewController.h; sourceTree = "<group>"; };
 		0C67FA0B192B641F00C8C6BB /* DDSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDSignupViewController.m; path = ../DDSignupViewController.m; sourceTree = "<group>"; };
+		0C911921192E4366003644A0 /* DDImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDImageViewController.h; path = ../DDImageViewController.h; sourceTree = "<group>"; };
+		0C911922192E4366003644A0 /* DDImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDImageViewController.m; path = ../DDImageViewController.m; sourceTree = "<group>"; };
+		0C911924192E5341003644A0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0CE71AEE192C98D0004FF720 /* DDFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFriendsViewController.h; path = ../DDFriendsViewController.h; sourceTree = "<group>"; };
+		0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFriendsViewController.m; path = ../DDFriendsViewController.m; sourceTree = "<group>"; };
+		0CE71AF1192DEDB3004FF720 /* DDCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDCameraViewController.h; path = ../DDCameraViewController.h; sourceTree = "<group>"; };
+		0CE71AF2192DEDB3004FF720 /* DDCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDCameraViewController.m; path = ../DDCameraViewController.m; sourceTree = "<group>"; };
+		96BCBE890A7046849D1AB3C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DC38859B36A5411496E33CDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C911925192E5341003644A0 /* MediaPlayer.framework in Frameworks */,
+				0C49A73F192DF74200B3D259 /* libz.1.2.5.dylib in Frameworks */,
 				0C24418D192B5727004580BF /* SystemConfiguration.framework in Frameworks */,
 				0C24418B192B5718004580BF /* StoreKit.framework in Frameworks */,
 				0C244189192B570F004580BF /* Security.framework in Frameworks */,
@@ -114,6 +122,7 @@
 				0C24413B192AA788004580BF /* UIKit.framework in Frameworks */,
 				0C24417B192B5508004580BF /* Parse.framework in Frameworks */,
 				0C244137192AA788004580BF /* Foundation.framework in Frameworks */,
+				03C85C865AD14ED1922830CE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,19 +142,21 @@
 		0C24412A192AA788004580BF = {
 			isa = PBXGroup;
 			children = (
+				0C5C59BB192E2AFD007EC100 /* Podfile */,
 				0C244165192AA7BC004580BF /* MainStoryboard.storyboard */,
-				0C24413C192AA788004580BF /* Ribbit */,
-				0C244155192AA789004580BF /* RibbitTests */,
+				0C24413C192AA788004580BF /* Lumpy */,
+				0C244155192AA789004580BF /* LumpyTests */,
 				0C244135192AA788004580BF /* Frameworks */,
 				0C244134192AA788004580BF /* Products */,
+				96BCBE890A7046849D1AB3C2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		0C244134192AA788004580BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C244133192AA788004580BF /* Ribbit.app */,
-				0C24414E192AA789004580BF /* RibbitTests.xctest */,
+				0C244133192AA788004580BF /* Lumpy.app */,
+				0C24414E192AA789004580BF /* LumpyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +164,8 @@
 		0C244135192AA788004580BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C911924192E5341003644A0 /* MediaPlayer.framework */,
+				0C49A73E192DF74200B3D259 /* libz.1.2.5.dylib */,
 				0C24418C192B5727004580BF /* SystemConfiguration.framework */,
 				0C24418A192B5718004580BF /* StoreKit.framework */,
 				0C244188192B570F004580BF /* Security.framework */,
@@ -167,17 +180,24 @@
 				0C244138192AA788004580BF /* CoreGraphics.framework */,
 				0C24413A192AA788004580BF /* UIKit.framework */,
 				0C24414F192AA789004580BF /* XCTest.framework */,
+				DC38859B36A5411496E33CDF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0C24413C192AA788004580BF /* Ribbit */ = {
+		0C24413C192AA788004580BF /* Lumpy */ = {
 			isa = PBXGroup;
 			children = (
+				0C911921192E4366003644A0 /* DDImageViewController.h */,
+				0C911922192E4366003644A0 /* DDImageViewController.m */,
+				0CE71AF1192DEDB3004FF720 /* DDCameraViewController.h */,
+				0CE71AF2192DEDB3004FF720 /* DDCameraViewController.m */,
 				0C67FA0A192B641F00C8C6BB /* DDSignupViewController.h */,
 				0C67FA0B192B641F00C8C6BB /* DDSignupViewController.m */,
 				0C67FA07192B640200C8C6BB /* DDLoginViewController.h */,
 				0C67FA08192B640200C8C6BB /* DDLoginViewController.m */,
+				0CE71AEE192C98D0004FF720 /* DDFriendsViewController.h */,
+				0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */,
 				0C244177192B509D004580BF /* DDEditFriendsViewController.h */,
 				0C244178192B509D004580BF /* DDEditFriendsViewController.m */,
 				0C244174192B43B9004580BF /* DDInboxViewController.h */,
@@ -187,27 +207,28 @@
 				0C244148192AA788004580BF /* Images.xcassets */,
 				0C24413D192AA788004580BF /* Supporting Files */,
 			);
+			name = Lumpy;
 			path = Ribbit;
 			sourceTree = "<group>";
 		};
 		0C24413D192AA788004580BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C244173192AAA96004580BF /* Images */,
-				0C24413E192AA788004580BF /* Ribbit-Info.plist */,
+				0C24413E192AA788004580BF /* Lumpy-Info.plist */,
 				0C24413F192AA788004580BF /* InfoPlist.strings */,
 				0C244142192AA788004580BF /* main.m */,
-				0C244144192AA788004580BF /* Ribbit-Prefix.pch */,
+				0C244144192AA788004580BF /* Lumpy-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C244155192AA789004580BF /* RibbitTests */ = {
+		0C244155192AA789004580BF /* LumpyTests */ = {
 			isa = PBXGroup;
 			children = (
 				0C24415B192AA789004580BF /* RibbitTests.m */,
 				0C244156192AA789004580BF /* Supporting Files */,
 			);
+			name = LumpyTests;
 			path = RibbitTests;
 			sourceTree = "<group>";
 		};
@@ -220,42 +241,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C244173192AAA96004580BF /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				0C244167192AAA58004580BF /* camera.png */,
-				0C244168192AAA58004580BF /* friends.png */,
-				0C244169192AAA58004580BF /* inbox.png */,
-				0C24416A192AAA58004580BF /* camera@2x.png */,
-				0C24416B192AAA58004580BF /* friends@2x.png */,
-				0C24416C192AAA58004580BF /* inbox@2x.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C244132192AA788004580BF /* Ribbit */ = {
+		0C244132192AA788004580BF /* Lumpy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C24415F192AA789004580BF /* Build configuration list for PBXNativeTarget "Ribbit" */;
+			buildConfigurationList = 0C24415F192AA789004580BF /* Build configuration list for PBXNativeTarget "Lumpy" */;
 			buildPhases = (
+				0DDB9B39BF38469AB1C2D933 /* Check Pods Manifest.lock */,
 				0C24412F192AA788004580BF /* Sources */,
 				0C244130192AA788004580BF /* Frameworks */,
 				0C244131192AA788004580BF /* Resources */,
+				B5F4CC85AD244550A5A47A34 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Ribbit;
+			name = Lumpy;
 			productName = Ribbit;
-			productReference = 0C244133192AA788004580BF /* Ribbit.app */;
+			productReference = 0C244133192AA788004580BF /* Lumpy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0C24414D192AA789004580BF /* RibbitTests */ = {
+		0C24414D192AA789004580BF /* LumpyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C244162192AA789004580BF /* Build configuration list for PBXNativeTarget "RibbitTests" */;
+			buildConfigurationList = 0C244162192AA789004580BF /* Build configuration list for PBXNativeTarget "LumpyTests" */;
 			buildPhases = (
 				0C24414A192AA789004580BF /* Sources */,
 				0C24414B192AA789004580BF /* Frameworks */,
@@ -266,9 +276,9 @@
 			dependencies = (
 				0C244154192AA789004580BF /* PBXTargetDependency */,
 			);
-			name = RibbitTests;
+			name = LumpyTests;
 			productName = RibbitTests;
-			productReference = 0C24414E192AA789004580BF /* RibbitTests.xctest */;
+			productReference = 0C24414E192AA789004580BF /* LumpyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -281,12 +291,15 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Double Digital";
 				TargetAttributes = {
+					0C244132192AA788004580BF = {
+						DevelopmentTeam = 9HNHHQLWA5;
+					};
 					0C24414D192AA789004580BF = {
 						TestTargetID = 0C244132192AA788004580BF;
 					};
 				};
 			};
-			buildConfigurationList = 0C24412E192AA788004580BF /* Build configuration list for PBXProject "Ribbit" */;
+			buildConfigurationList = 0C24412E192AA788004580BF /* Build configuration list for PBXProject "Lumpy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -298,8 +311,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C244132192AA788004580BF /* Ribbit */,
-				0C24414D192AA789004580BF /* RibbitTests */,
+				0C244132192AA788004580BF /* Lumpy */,
+				0C24414D192AA789004580BF /* LumpyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,15 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5C59BC192E2AFD007EC100 /* Podfile in Resources */,
 				0C244166192AA7BC004580BF /* MainStoryboard.storyboard in Resources */,
 				0C244141192AA788004580BF /* InfoPlist.strings in Resources */,
-				0C24416F192AAA58004580BF /* inbox.png in Resources */,
-				0C24416E192AAA58004580BF /* friends.png in Resources */,
-				0C244170192AAA58004580BF /* camera@2x.png in Resources */,
-				0C24416D192AAA58004580BF /* camera.png in Resources */,
-				0C244171192AAA58004580BF /* friends@2x.png in Resources */,
 				0C244149192AA788004580BF /* Images.xcassets in Resources */,
-				0C244172192AAA58004580BF /* inbox@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,14 +339,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DDB9B39BF38469AB1C2D933 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F4CC85AD244550A5A47A34 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C24412F192AA788004580BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C911923192E4366003644A0 /* DDImageViewController.m in Sources */,
 				0C67FA09192B640200C8C6BB /* DDLoginViewController.m in Sources */,
 				0C244179192B509D004580BF /* DDEditFriendsViewController.m in Sources */,
 				0C67FA0C192B641F00C8C6BB /* DDSignupViewController.m in Sources */,
+				0CE71AF3192DEDB3004FF720 /* DDCameraViewController.m in Sources */,
+				0CE71AF0192C98D0004FF720 /* DDFriendsViewController.m in Sources */,
 				0C244176192B43B9004580BF /* DDInboxViewController.m in Sources */,
 				0C244147192AA788004580BF /* DDAppDelegate.m in Sources */,
 				0C244143192AA788004580BF /* main.m in Sources */,
@@ -358,7 +402,7 @@
 /* Begin PBXTargetDependency section */
 		0C244154192AA789004580BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C244132192AA788004580BF /* Ribbit */;
+			target = 0C244132192AA788004580BF /* Lumpy */;
 			targetProxy = 0C244153192AA789004580BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -455,34 +499,50 @@
 		};
 		0C244160192AA789004580BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BCBE890A7046849D1AB3C2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
-				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Ribbit/Lumpy-Prefix.pch";
+				INFOPLIST_FILE = "Ribbit/Lumpy-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreGraphics,
+				);
+				PRODUCT_NAME = Lumpy;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		0C244161192AA789004580BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BCBE890A7046849D1AB3C2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
-				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Ribbit/Lumpy-Prefix.pch";
+				INFOPLIST_FILE = "Ribbit/Lumpy-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreGraphics,
+				);
+				PRODUCT_NAME = Lumpy;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -503,7 +563,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "RibbitTests/RibbitTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LumpyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -521,7 +581,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "RibbitTests/RibbitTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LumpyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -530,7 +590,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C24412E192AA788004580BF /* Build configuration list for PBXProject "Ribbit" */ = {
+		0C24412E192AA788004580BF /* Build configuration list for PBXProject "Lumpy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C24415D192AA789004580BF /* Debug */,
@@ -539,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C24415F192AA789004580BF /* Build configuration list for PBXNativeTarget "Ribbit" */ = {
+		0C24415F192AA789004580BF /* Build configuration list for PBXNativeTarget "Lumpy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C244160192AA789004580BF /* Debug */,
@@ -548,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C244162192AA789004580BF /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
+		0C244162192AA789004580BF /* Build configuration list for PBXNativeTarget "LumpyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C244163192AA789004580BF /* Debug */,
