@@ -15,6 +15,8 @@
 
 @implementation DDSignupViewController
 
+@synthesize activityIndicator;
+
 UIGestureRecognizer *tapper;
 
 - (void)viewDidLoad
@@ -39,6 +41,9 @@ UIGestureRecognizer *tapper;
         [alertView show];
     }
     else {
+        
+        [activityIndicator startAnimating];
+
         PFUser *newUser = [PFUser user];
         newUser.username = username;
         newUser.email = email;
@@ -52,6 +57,7 @@ UIGestureRecognizer *tapper;
             else {
                 [self.navigationController popToRootViewControllerAnimated:YES];
             }
+            [activityIndicator stopAnimating];
         }];
     }
 }

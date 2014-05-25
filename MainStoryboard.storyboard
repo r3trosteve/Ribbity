@@ -259,11 +259,16 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-Mb-JI6">
+                                <rect key="frame" x="109" y="315" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lumpy" id="27m-jy-fgz"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="eSZ-Mb-JI6" id="7eU-wh-Hcg"/>
                         <outlet property="passwordField" destination="C2n-3a-T1W" id="MC9-WZ-SFy"/>
                         <outlet property="usernameField" destination="Obn-el-wyT" id="fQs-Gr-Iab"/>
                     </connections>
@@ -354,11 +359,16 @@
                                     <segue destination="TYc-Au-ji9" kind="push" id="pb9-QQ-LAm"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="V9T-ji-a6y">
+                                <rect key="frame" x="99" y="317" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lumpy" id="lin-gF-Mih"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="V9T-ji-a6y" id="dCY-F0-vH3"/>
                         <outlet property="emailField" destination="pAg-vf-ZPh" id="GIk-Lf-N50"/>
                         <outlet property="passwordField" destination="ejS-R0-b6e" id="ibc-fl-Ls7"/>
                         <outlet property="usernameField" destination="1ZQ-YL-ZB4" id="hUQ-e4-wJ8"/>

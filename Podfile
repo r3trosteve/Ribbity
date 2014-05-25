@@ -1,1 +1,1 @@
-pod 'MBProgressHUD', '~> 0.8'
+pod "MDCSwipeToChoose"

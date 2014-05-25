@@ -9,11 +9,15 @@
 #import "DDLoginViewController.h"
 #import <Parse/Parse.h>
 
+
+
 @interface DDLoginViewController ()
 
 @end
 
 @implementation DDLoginViewController
+
+@synthesize activityIndicator;
 
 UIGestureRecognizer *tapper;
 
@@ -50,15 +54,19 @@ UIGestureRecognizer *tapper;
     }
     // submit the login request to Parse as asynchronous request
     else {
+        
+        [activityIndicator startAnimating];
         [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
             if (error) {
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry!" message:[error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
                 [alertView show];
             }
             else {
+                
                 [self.navigationController popToRootViewControllerAnimated:YES];
+                
             }
-
+        [activityIndicator stopAnimating];
         }];
     }
 

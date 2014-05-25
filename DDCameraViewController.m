@@ -7,7 +7,6 @@
 //
 
 #import "DDCameraViewController.h"
-#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface DDCameraViewController ()
 
