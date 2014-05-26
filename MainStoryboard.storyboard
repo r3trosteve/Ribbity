@@ -48,6 +48,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lumpy" id="al8-p8-Xu4">
+                        <barButtonItem key="leftBarButtonItem" title="Drag" id="8tD-56-GJT">
+                            <connections>
+                                <segue destination="Cke-NE-O1L" kind="push" id="Gjd-Nn-0DX"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="2wP-hk-T2c">
                             <connections>
                                 <action selector="logout:" destination="PDq-pZ-lW2" id="Kb2-mK-Ew4"/>
@@ -166,6 +171,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLp-Ch-q0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1438" y="337"/>
+        </scene>
+        <!--View-->
+        <scene sceneID="YQX-fH-LCM">
+            <objects>
+                <viewController id="Cke-NE-O1L" customClass="DDView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7S8-Ye-WIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bUM-Do-hYr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0hi-gG-gyF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eJb-cR-cyA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKg-zN-asf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027" y="-993"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="IjV-vU-vqK">

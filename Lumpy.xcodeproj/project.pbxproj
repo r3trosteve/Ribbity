@@ -39,6 +39,15 @@
 		0C67FA0C192B641F00C8C6BB /* DDSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C67FA0B192B641F00C8C6BB /* DDSignupViewController.m */; };
 		0C911923192E4366003644A0 /* DDImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C911922192E4366003644A0 /* DDImageViewController.m */; };
 		0C911925192E5341003644A0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C911924192E5341003644A0 /* MediaPlayer.framework */; };
+		0C9A9D1419329D630019ADF3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A9D1319329D630019ADF3 /* FacebookSDK.framework */; };
+		0C9A9D1619329DF80019ADF3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A9D1519329DF80019ADF3 /* Social.framework */; };
+		0C9A9D19193315D80019ADF3 /* DDDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A9D18193315D80019ADF3 /* DDDraggableView.m */; };
+		0C9A9D1C193319360019ADF3 /* DDMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A9D1B193319360019ADF3 /* DDMessageView.m */; };
+		0C9A9D1F19331AA50019ADF3 /* DDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A9D1E19331AA50019ADF3 /* DDOverlayView.m */; };
+		0C9A9D2419331BCD0019ADF3 /* bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A9D2119331BCD0019ADF3 /* bar@2x.png */; };
+		0C9A9D2519331BCD0019ADF3 /* thumbs_up_300x300@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A9D2219331BCD0019ADF3 /* thumbs_up_300x300@2x.png */; };
+		0C9A9D2619331BCD0019ADF3 /* trollface_300x200@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A9D2319331BCD0019ADF3 /* trollface_300x200@2x.png */; };
+		0C9A9D30193322B70019ADF3 /* DDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A9D2F193322B70019ADF3 /* DDView.m */; };
 		0CE71AF0192C98D0004FF720 /* DDFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */; };
 		0CE71AF3192DEDB3004FF720 /* DDCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE71AF2192DEDB3004FF720 /* DDCameraViewController.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +103,19 @@
 		0C911921192E4366003644A0 /* DDImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDImageViewController.h; path = ../DDImageViewController.h; sourceTree = "<group>"; };
 		0C911922192E4366003644A0 /* DDImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDImageViewController.m; path = ../DDImageViewController.m; sourceTree = "<group>"; };
 		0C911924192E5341003644A0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0C9A9D1319329D630019ADF3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		0C9A9D1519329DF80019ADF3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0C9A9D17193315D80019ADF3 /* DDDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDDraggableView.h; path = ../DDDraggableView.h; sourceTree = "<group>"; };
+		0C9A9D18193315D80019ADF3 /* DDDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDDraggableView.m; path = ../DDDraggableView.m; sourceTree = "<group>"; };
+		0C9A9D1A193319360019ADF3 /* DDMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMessageView.h; sourceTree = "<group>"; };
+		0C9A9D1B193319360019ADF3 /* DDMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMessageView.m; sourceTree = "<group>"; };
+		0C9A9D1D19331AA50019ADF3 /* DDOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDOverlayView.h; sourceTree = "<group>"; };
+		0C9A9D1E19331AA50019ADF3 /* DDOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOverlayView.m; sourceTree = "<group>"; };
+		0C9A9D2119331BCD0019ADF3 /* bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar@2x.png"; sourceTree = "<group>"; };
+		0C9A9D2219331BCD0019ADF3 /* thumbs_up_300x300@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs_up_300x300@2x.png"; sourceTree = "<group>"; };
+		0C9A9D2319331BCD0019ADF3 /* trollface_300x200@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trollface_300x200@2x.png"; sourceTree = "<group>"; };
+		0C9A9D2E193322B70019ADF3 /* DDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDView.h; sourceTree = "<group>"; };
+		0C9A9D2F193322B70019ADF3 /* DDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDView.m; sourceTree = "<group>"; };
 		0CE71AEE192C98D0004FF720 /* DDFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFriendsViewController.h; path = ../DDFriendsViewController.h; sourceTree = "<group>"; };
 		0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFriendsViewController.m; path = ../DDFriendsViewController.m; sourceTree = "<group>"; };
 		0CE71AF1192DEDB3004FF720 /* DDCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDCameraViewController.h; path = ../DDCameraViewController.h; sourceTree = "<group>"; };
@@ -107,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9A9D1619329DF80019ADF3 /* Social.framework in Frameworks */,
 				0C911925192E5341003644A0 /* MediaPlayer.framework in Frameworks */,
 				0C49A73F192DF74200B3D259 /* libz.1.2.5.dylib in Frameworks */,
 				0C24418D192B5727004580BF /* SystemConfiguration.framework in Frameworks */,
@@ -115,6 +138,7 @@
 				0C244187192B5706004580BF /* QuartzCore.framework in Frameworks */,
 				0C244185192B56FD004580BF /* MobileCoreServices.framework in Frameworks */,
 				0C244183192B56F5004580BF /* libz.dylib in Frameworks */,
+				0C9A9D1419329D630019ADF3 /* FacebookSDK.framework in Frameworks */,
 				0C244181192B56DD004580BF /* CoreLocation.framework in Frameworks */,
 				0C244139192AA788004580BF /* CoreGraphics.framework in Frameworks */,
 				0C24417F192B56CB004580BF /* CFNetwork.framework in Frameworks */,
@@ -164,6 +188,8 @@
 		0C244135192AA788004580BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C9A9D1519329DF80019ADF3 /* Social.framework */,
+				0C9A9D1319329D630019ADF3 /* FacebookSDK.framework */,
 				0C911924192E5341003644A0 /* MediaPlayer.framework */,
 				0C49A73E192DF74200B3D259 /* libz.1.2.5.dylib */,
 				0C24418C192B5727004580BF /* SystemConfiguration.framework */,
@@ -188,20 +214,12 @@
 		0C24413C192AA788004580BF /* Lumpy */ = {
 			isa = PBXGroup;
 			children = (
-				0C911921192E4366003644A0 /* DDImageViewController.h */,
-				0C911922192E4366003644A0 /* DDImageViewController.m */,
+				0C9A9D2A1933213E0019ADF3 /* Inbox */,
+				0C9A9D27193321100019ADF3 /* View Message */,
 				0CE71AF1192DEDB3004FF720 /* DDCameraViewController.h */,
 				0CE71AF2192DEDB3004FF720 /* DDCameraViewController.m */,
-				0C67FA0A192B641F00C8C6BB /* DDSignupViewController.h */,
-				0C67FA0B192B641F00C8C6BB /* DDSignupViewController.m */,
-				0C67FA07192B640200C8C6BB /* DDLoginViewController.h */,
-				0C67FA08192B640200C8C6BB /* DDLoginViewController.m */,
-				0CE71AEE192C98D0004FF720 /* DDFriendsViewController.h */,
-				0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */,
-				0C244177192B509D004580BF /* DDEditFriendsViewController.h */,
-				0C244178192B509D004580BF /* DDEditFriendsViewController.m */,
-				0C244174192B43B9004580BF /* DDInboxViewController.h */,
-				0C244175192B43B9004580BF /* DDInboxViewController.m */,
+				0C9A9D28193321270019ADF3 /* Login Signup */,
+				0C9A9D29193321350019ADF3 /* Friends */,
 				0C244145192AA788004580BF /* DDAppDelegate.h */,
 				0C244146192AA788004580BF /* DDAppDelegate.m */,
 				0C244148192AA788004580BF /* Images.xcassets */,
@@ -214,6 +232,7 @@
 		0C24413D192AA788004580BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C9A9D2019331BC40019ADF3 /* Images */,
 				0C24413E192AA788004580BF /* Lumpy-Info.plist */,
 				0C24413F192AA788004580BF /* InfoPlist.strings */,
 				0C244142192AA788004580BF /* main.m */,
@@ -239,6 +258,64 @@
 				0C244158192AA789004580BF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C9A9D2019331BC40019ADF3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A9D2119331BCD0019ADF3 /* bar@2x.png */,
+				0C9A9D2219331BCD0019ADF3 /* thumbs_up_300x300@2x.png */,
+				0C9A9D2319331BCD0019ADF3 /* trollface_300x200@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0C9A9D27193321100019ADF3 /* View Message */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A9D2E193322B70019ADF3 /* DDView.h */,
+				0C9A9D2F193322B70019ADF3 /* DDView.m */,
+				0C9A9D1A193319360019ADF3 /* DDMessageView.h */,
+				0C9A9D1B193319360019ADF3 /* DDMessageView.m */,
+				0C9A9D17193315D80019ADF3 /* DDDraggableView.h */,
+				0C9A9D18193315D80019ADF3 /* DDDraggableView.m */,
+				0C9A9D1D19331AA50019ADF3 /* DDOverlayView.h */,
+				0C9A9D1E19331AA50019ADF3 /* DDOverlayView.m */,
+				0C911921192E4366003644A0 /* DDImageViewController.h */,
+				0C911922192E4366003644A0 /* DDImageViewController.m */,
+			);
+			name = "View Message";
+			sourceTree = "<group>";
+		};
+		0C9A9D28193321270019ADF3 /* Login Signup */ = {
+			isa = PBXGroup;
+			children = (
+				0C67FA0A192B641F00C8C6BB /* DDSignupViewController.h */,
+				0C67FA0B192B641F00C8C6BB /* DDSignupViewController.m */,
+				0C67FA07192B640200C8C6BB /* DDLoginViewController.h */,
+				0C67FA08192B640200C8C6BB /* DDLoginViewController.m */,
+			);
+			name = "Login Signup";
+			sourceTree = "<group>";
+		};
+		0C9A9D29193321350019ADF3 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				0CE71AEE192C98D0004FF720 /* DDFriendsViewController.h */,
+				0CE71AEF192C98D0004FF720 /* DDFriendsViewController.m */,
+				0C244177192B509D004580BF /* DDEditFriendsViewController.h */,
+				0C244178192B509D004580BF /* DDEditFriendsViewController.m */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		0C9A9D2A1933213E0019ADF3 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				0C244174192B43B9004580BF /* DDInboxViewController.h */,
+				0C244175192B43B9004580BF /* DDInboxViewController.m */,
+			);
+			name = Inbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,8 +400,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C5C59BC192E2AFD007EC100 /* Podfile in Resources */,
+				0C9A9D2619331BCD0019ADF3 /* trollface_300x200@2x.png in Resources */,
 				0C244166192AA7BC004580BF /* MainStoryboard.storyboard in Resources */,
 				0C244141192AA788004580BF /* InfoPlist.strings in Resources */,
+				0C9A9D2519331BCD0019ADF3 /* thumbs_up_300x300@2x.png in Resources */,
+				0C9A9D2419331BCD0019ADF3 /* bar@2x.png in Resources */,
 				0C244149192AA788004580BF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,9 +458,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C911923192E4366003644A0 /* DDImageViewController.m in Sources */,
+				0C9A9D1C193319360019ADF3 /* DDMessageView.m in Sources */,
 				0C67FA09192B640200C8C6BB /* DDLoginViewController.m in Sources */,
+				0C9A9D1F19331AA50019ADF3 /* DDOverlayView.m in Sources */,
 				0C244179192B509D004580BF /* DDEditFriendsViewController.m in Sources */,
 				0C67FA0C192B641F00C8C6BB /* DDSignupViewController.m in Sources */,
+				0C9A9D19193315D80019ADF3 /* DDDraggableView.m in Sources */,
+				0C9A9D30193322B70019ADF3 /* DDView.m in Sources */,
 				0CE71AF3192DEDB3004FF720 /* DDCameraViewController.m in Sources */,
 				0CE71AF0192C98D0004FF720 /* DDFriendsViewController.m in Sources */,
 				0C244176192B43B9004580BF /* DDInboxViewController.m in Sources */,

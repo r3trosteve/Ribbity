@@ -7,12 +7,16 @@
 //
 
 #import "DDImageViewController.h"
+#import "DDMessageView.h"
 
 @interface DDImageViewController ()
-
 @end
 
 @implementation DDImageViewController
+
+- (void)loadView {
+    self.view = [[DDMessageView alloc] init];
+}
 
 - (void)viewDidLoad
 {
@@ -41,17 +45,18 @@
     else {
         NSLog(@"selector missing");
     }
-    
-    
 }
+
+
+
+
 
 #pragma mark - Helper Methods
 
-// timeout selector method will return user back to previous view
+ // timeout selector method will return user back to previous view
 - (void)timeout {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 
 
 @end

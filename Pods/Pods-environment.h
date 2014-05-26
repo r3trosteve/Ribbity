@@ -6,15 +6,9 @@
 // project.
 
 
-// MBProgressHUD
-#define COCOAPODS_POD_AVAILABLE_MBProgressHUD
-#define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
-#define COCOAPODS_VERSION_MINOR_MBProgressHUD 8
-#define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
-
-// MYBlurIntroductionView
-#define COCOAPODS_POD_AVAILABLE_MYBlurIntroductionView
-#define COCOAPODS_VERSION_MAJOR_MYBlurIntroductionView 1
-#define COCOAPODS_VERSION_MINOR_MYBlurIntroductionView 0
-#define COCOAPODS_VERSION_PATCH_MYBlurIntroductionView 3
+// MDCSwipeToChoose
+#define COCOAPODS_POD_AVAILABLE_MDCSwipeToChoose
+#define COCOAPODS_VERSION_MAJOR_MDCSwipeToChoose 0
+#define COCOAPODS_VERSION_MINOR_MDCSwipeToChoose 2
+#define COCOAPODS_VERSION_PATCH_MDCSwipeToChoose 1
 
