@@ -20,7 +20,7 @@
     self = [super init];
     if (!self) return nil;
     
-    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor whiteColor];
     
     [self loadDraggableCustomView];
     
@@ -29,7 +29,7 @@
 
 - (void)loadDraggableCustomView
 {
-    self.draggableView = [[DDDraggableView alloc] initWithFrame:CGRectMake(60, 60, 200, 260)];
+    self.draggableView = [[DDDraggableView alloc] initWithFrame:CGRectMake(20, 80, 280, 280)];
     
     [self addSubview:self.draggableView];
 }

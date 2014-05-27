@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
 @property(nonatomic) CGPoint originalPoint;
 @property(nonatomic, strong) DDOverlayView *overlayView;
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation DDDraggableView
@@ -32,17 +33,26 @@
     self.overlayView.alpha = 0;
     [self addSubview:self.overlayView];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(loadImage:)
+                                                 name:@"ImageLoadedNotification"
+                                               object:nil];
+    
     return self;
 }
 
 - (void)loadImageAndStyle
 {
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bar"]];
-    [self addSubview:imageView];
-    self.layer.cornerRadius = 8;
-    self.layer.shadowOffset = CGSizeMake(7, 7);
-    self.layer.shadowRadius = 5;
-    self.layer.shadowOpacity = 0.5;
+    self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bar"]];
+    [self addSubview:self.imageView];
+    self.layer.cornerRadius = 12;
+    self.layer.shadowOffset = CGSizeMake(3, 3);
+    self.layer.shadowRadius = 1;
+    self.layer.shadowOpacity = 0.4;
+    self.layer.shouldRasterize = YES;
+    self.layer.masksToBounds = YES;
+    self.layer.borderColor = (__bridge CGColorRef)([UIColor darkGrayColor]);
+    self.layer.borderWidth = 1.0;
 }
 
 
@@ -105,6 +115,15 @@
 {
     [self removeGestureRecognizer:self.panGestureRecognizer];
 }
+
+#pragma mark - Helper Method
+
+- (void)loadImage:(NSNotification *)notification {
+    UIImage *image = [notification.userInfo valueForKey:@"image"];
+    self.imageView.image = image;
+    NSLog(@"Load Image");
+}
+
 
 
 @end

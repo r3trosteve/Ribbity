@@ -10,6 +10,7 @@
 #import "DDMessageView.h"
 
 @interface DDImageViewController ()
+@property (nonatomic, strong) NSDictionary *userInfo;
 @end
 
 @implementation DDImageViewController
@@ -32,6 +33,14 @@
     NSString *senderName = [self.message objectForKey:@"senderName"];
     NSString *title = [NSString stringWithFormat:@"Sent from %@", senderName];
     self.navigationItem.title = title;
+    
+   self.userInfo = [NSDictionary dictionaryWithObject:[UIImage imageWithData:imageData]
+                                                     forKey:@"image"];
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"ImageLoadedNotification"
+     object:self
+     userInfo:self.userInfo];
 }
 
 - (void)viewDidAppear:(BOOL)animated

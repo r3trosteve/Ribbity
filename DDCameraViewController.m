@@ -182,7 +182,7 @@
     // Check if image or video
     if (self.image != nil) {
         // if image shrinkit
-        UIImage *newImage = [self resizeImage:self.image toWidth:320.0f andHeight:480.0f];
+        UIImage *newImage = [self resizeImage:self.image toWidth:560.0f andHeight:560.0f];
         fileData = UIImagePNGRepresentation(newImage);
         fileName = @"image.png";
         fileType = @"image";
